@@ -1,5 +1,6 @@
-* {
+body {
     margin: 0;
+    background: #F5F5F5;
 }
 
 nav {
@@ -26,7 +27,27 @@ nav ul {
     height: 80vh;
 }
 
+.hero-image h1 {
+    padding-top: 15%;
+    color: white;
+}
+
 h1 {
     text-align: center;
-    padding-top: 40%;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15% 0 15%;
+    background: white;
+}
+
+.hero-content h2 {
+    padding: 2.5%;
+}
+
+.hero-content p {
+    padding-left: 2.5%;
+    
 }
