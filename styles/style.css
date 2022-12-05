@@ -4,11 +4,22 @@ body {
 }
 
 nav {
-    background-color: rgba(red, green, blue, .3);
+    background-color: rgba(255, 255, 255, .75);
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 5vh;
+    height: 6vh;
+    align-items:center
+}
+
+li a {
+    text-align: center;
+    text-decoration:none;
+    color:black;
+    background-color:rgba(255, 255, 255, .50);
+    padding:10px;
+    border-radius:10px;
+    border:#273273 2px solid;
 }
 
 nav ul {
@@ -17,7 +28,6 @@ nav ul {
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    
     padding: 5px;
 }
 
@@ -30,6 +40,7 @@ nav ul {
 .hero-image h1 {
     padding-top: 15%;
     color: white;
+    background-color:rgba(78, 100, 166, .35)
 }
 
 h1 {
@@ -50,4 +61,37 @@ h1 {
 .hero-content p {
     padding-left: 2.5%;
     
+}
+
+.sub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width:100%;
+}
+
+.sub-nav div {
+    display:flex;
+    width:40%;
+    height: 20vh;
+    background-color:#4E64A6;
+    align-items: center;
+    justify-content:center;
+    border-radius:15px;
+}
+
+.sub-nav div a {
+    background-color:rgba(234, 247, 250, .35);
+    color:white;
+    font-size:1.5rem;
+    text-decoration:none;
+    border-radius:15px;
+    text-align:center;
+    padding:10px;
+    width:75%;
+    border:#273273 2px solid;
+}
+
+h2 {
+    width:100%;
 }
