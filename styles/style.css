@@ -5,6 +5,12 @@
 body {
     margin: 0;
     background: #F5F5F5;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 nav {
@@ -16,14 +22,14 @@ nav {
     align-items:center
 }
 
-li a {
+nav ul li a {
     text-align: center;
     text-decoration:none;
     color:black;
     background-color:rgba(255, 255, 255, .50);
     padding:10px;
     border-radius:10px;
-    border:#273273 2px solid;
+    border: #273273 2px solid;
 }
 
 nav ul {
@@ -43,9 +49,12 @@ nav ul {
 
  h1 {
     color: white;
-    background-color:rgba(78, 100, 166, .35);
+    background-color: rgba(78, 100, 166, .35);
+    border: #273273 5px solid;
     border-radius: 20px;
+    padding: 16px;
 }
+
 .hero-title{
     background-color: none;
     width: 100%;
@@ -53,14 +62,15 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.5em;
 }
-
 
 .hero-content {
     display: flex;
     flex-wrap: wrap;
     margin: 0 15% 0 15%;
     background: white;
+    padding: 3vw;
 }
 
 .sub-nav {
@@ -100,7 +110,6 @@ h2 {
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
-    padding: 0% 2.5%;
     width: 100%;
     
 }
@@ -128,6 +137,7 @@ h2 {
 
 .section__information ul {
     padding-left: 5%;
+    font-size: 1.2em;
 }
 
 #infoPage__image1 {
@@ -136,4 +146,31 @@ h2 {
 
 #infoPage__image2 {
     background-color: black;
+}
+
+footer {
+    width: 100vw;
+    background-color: #273273;
+    display: flex;
+    color: white;
+}
+
+footer > div {
+    width: 33.33%;
+    text-align: center;
+    padding: 2vh 0;
+}
+
+footer div:not(:last-child) {
+    border-right: #4E64A6 0.25vw solid;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
