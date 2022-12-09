@@ -43,8 +43,9 @@ nav ul {
 
 .hero-image {
     background-image: url(/Images/child.jpg);
-    background-position: center;
+    background-position: center right;
     height: 80vh;
+    border-bottom: 4px solid #273273;
 }
 
  h1 {
@@ -76,14 +77,14 @@ nav ul {
 .sub-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-between;
     width:100%;
 }
 
 .sub-nav div {
     display:flex;
-    width:40%;
-    height: 20vh;
+    width:47%;
+    height: 15vh;
     background-color:#4E64A6;
     align-items: center;
     justify-content:center;
@@ -110,21 +111,27 @@ h2 {
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
+    
     width: 100%;
     
 }
 
 .section--right-aligned {
     flex-direction: row-reverse;
+    align-content: center;
 }
 
 .section__images {
     width: 40%;
+    overflow: hidden;
+    
 }
 
 .section__image {
     width: 100%;
-    height: 45%;
+    height: 100%;
+    margin: 7% 0 0 0;
+    
 }
 
 .section__information {
@@ -141,11 +148,13 @@ h2 {
 }
 
 #infoPage__image1 {
-    background-color: red;
+    background: url("../Images/malicious.jpg");
+    background-size: cover;
 }
 
 #infoPage__image2 {
-    background-color: black;
+    background: url("../Images/993.jpg");
+    background-size: contain;
 }
 
 footer {
@@ -173,4 +182,13 @@ footer ul {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+.section__information li{
+    padding:5px;
+}
+
+.nd{
+    background: url("../Images/nerd.jpg") bottom;
+    background-size: cover;
 }
