@@ -9,8 +9,9 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 p {
-    font-size: 1.2em;
+    font-size: 1.25rem;
 }
 
 nav {
@@ -54,6 +55,7 @@ nav ul {
     border: #273273 5px solid;
     border-radius: 20px;
     padding: 16px;
+    text-align: center;
 }
 
 .hero-title{
@@ -95,11 +97,11 @@ nav ul {
     background-color:rgba(234, 247, 250, .35);
     color:white;
     font-size:1.5rem;
-    text-decoration:none;
-    border-radius:15px;
-    text-align:center;
-    padding:10px;
-    width:75%;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    width: 75%;
     border:#273273 2px solid;
 }
 
@@ -111,7 +113,6 @@ h2 {
     display: flex;
     flex-direction: row ;
     justify-content: space-between;
-    
     width: 100%;
     
 }
@@ -124,14 +125,12 @@ h2 {
 .section__images {
     width: 40%;
     overflow: hidden;
-    
 }
 
 .section__image {
     width: 100%;
     height: 100%;
     margin: 7% 0 0 0;
-    
 }
 
 .section__information {
@@ -148,13 +147,13 @@ h2 {
 }
 
 #infoPage__image1 {
-    background: url("../Images/malicious.jpg");
+    background: url("../Images/malicious.jpg") center;
     background-size: cover;
 }
 
 #infoPage__image2 {
-    background: url("../Images/993.jpg");
-    background-size: contain;
+    background: url("../Images/993.jpg") center;
+    background-size: cover;
 }
 
 footer {
@@ -164,13 +163,13 @@ footer {
     color: white;
 }
 
-footer > div {
+.third {
     width: 33.33%;
     text-align: center;
     padding: 2vh 0;
 }
 
-footer div:not(:last-child) {
+.third:not(:last-child) {
     border-right: #4E64A6 0.25vw solid;
 }
 
@@ -182,13 +181,112 @@ footer ul {
 footer a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.foot-header {
+    text-decoration: dotted underline;
 }
 
 .section__information li{
     padding:5px;
 }
 
-.nd{
+.hero-info{
     background: url("../Images/nerd.jpg") bottom;
     background-size: cover;
+}
+
+/* link fade */
+a {
+    transition: 0.5s;
+}
+
+/* a:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+a:active {
+    background-color: rgba(0, 0, 0, .001);
+} */
+
+div a:hover:not(footer a){
+    background-color: rgba(0, 0, 0, .5);
+}
+
+div a:active:not(footer a) {
+    background-color: rgba(255, 255, 255, .35);
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, .5);
+}
+
+footer a:active {
+    color: rgba(255, 255, 255, .35);
+}
+
+::selection {
+    /* color: red; */
+    color: #F5F5F5;
+    background-color: #4E64A6;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 800px) {
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .third {
+        width: 100%;
+        border: none;
+    }
+
+    .third:not(:first-child) {
+        border-top: #4E64A6 solid .25vw;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .section {
+        flex-wrap: wrap;
+    }
+
+    .section__information {
+        width: 100%;
+    }
+
+    .section__images {
+        width: 100%;
+    }
+
+    .section__image {
+        margin: 0;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .sub-nav div {
+        width: 100%;
+
+    }
+
+    .sub-nav div:first-child {
+        margin-bottom: 3vw;
+    }
+
+    body {
+        font-size: larger;
+    }
+
+    nav ul {
+        margin-bottom: 100%;
+    }
+
+    nav {
+        height: 7vh;
+    }
 }
