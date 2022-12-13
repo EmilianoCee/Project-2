@@ -43,7 +43,7 @@ nav ul {
 }
 
 .hero-image {
-    background-image: url(/Images/child.jpg);
+    background-image: url(/images/child.jpg);
     background-position: center right;
     height: 80vh;
     border-bottom: 4px solid #273273;
@@ -107,12 +107,12 @@ nav ul {
 }
 
 .sub-image-one {
-    background-image: url(/Images/mail-notif.jpg);
+    background-image: url(/images/mail-notif.jpg);
     background-size: cover;
 }
 
 .sub-image-two {
-    background-image: url(/Images/lock.jpg);
+    background-image: url(/images/lock.jpg);
     background-size: cover;
 }
 
@@ -163,12 +163,12 @@ h2:first-of-type{
 }
 
 #infoPage__image1 {
-    background: url(/Images/malicious.jpg) center;
+    background: url(/images/malicious.jpg) center;
     background-size: cover;
 }
 
 #infoPage__image2 {
-    background: url(/Images/combination.jpg) center;
+    background: url(/images/combination.jpg) center;
     background-size: cover;
 }
 
@@ -217,7 +217,7 @@ address {
 }
 
 .hero-info{
-    background: url(/Images/nerd.jpg) bottom;
+    background: url(/images/nerd.jpg) bottom;
     background-size: cover;
 }
 
