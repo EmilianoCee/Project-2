@@ -59,7 +59,7 @@ nav ul {
 }
 
 .hero-title{
-    background-color: none;
+    /* background-color: none; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -86,15 +86,16 @@ nav ul {
 .sub-nav div {
     display:flex;
     width:47%;
-    height: 15vh;
+    height: 25vh;
     background-color:#4E64A6;
     align-items: center;
     justify-content:center;
     border-radius:15px;
+    border:#273273 4px solid;
 }
 
 .sub-nav div a {
-    background-color:rgba(234, 247, 250, .35);
+    background-color:rgba(0, 0, 0, .80);
     color:white;
     font-size:1.5rem;
     text-decoration: none;
@@ -105,8 +106,22 @@ nav ul {
     border:#273273 2px solid;
 }
 
+.sub-image-one {
+    background-image: url(/Images/mail-notif.jpg);
+    background-size: cover;
+}
+
+.sub-image-two {
+    background-image: url(/Images/lock.jpg);
+    background-size: cover;
+}
+
 h2 {
     width:100%;
+}
+
+h2:first-of-type{
+    margin: 0;
 }
 
 .section {
@@ -118,6 +133,7 @@ h2 {
 }
 
 .section--right-aligned {
+    padding-top: 3vw;
     flex-direction: row-reverse;
     align-content: center;
 }
@@ -130,7 +146,7 @@ h2 {
 .section__image {
     width: 100%;
     height: 100%;
-    margin: 7% 0 0 0;
+    /* margin: 7% 0 0 0; */
 }
 
 .section__information {
@@ -147,12 +163,12 @@ h2 {
 }
 
 #infoPage__image1 {
-    background: url("../Images/malicious.jpg") center;
+    background: url(/Images/malicious.jpg) center;
     background-size: cover;
 }
 
 #infoPage__image2 {
-    background: url("../Images/993.jpg") center;
+    background: url(/Images/combination.jpg) center;
     background-size: cover;
 }
 
@@ -178,9 +194,17 @@ footer ul {
     padding-left: 0;
 }
 
+footer ul li:not(:first-child) {
+    padding-top: 3%;
+}
+
 footer a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+}
+
+address {
     font-size: 1.2rem;
 }
 
@@ -193,7 +217,7 @@ footer a {
 }
 
 .hero-info{
-    background: url("../Images/nerd.jpg") bottom;
+    background: url(/Images/nerd.jpg) bottom;
     background-size: cover;
 }
 
@@ -211,11 +235,12 @@ a:active {
 } */
 
 div a:hover:not(footer a){
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(200, 200, 200, .80);
+    color: black;
 }
 
 div a:active:not(footer a) {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .90);
 }
 
 footer a:hover {
