@@ -165,11 +165,13 @@ h2:first-of-type{
 #infoPage__image1 {
     background: url(/images/malicious.jpg) center;
     background-size: cover;
+    border:#273273 2px solid;
 }
 
 #infoPage__image2 {
     background: url(/images/combination.jpg) center;
     background-size: cover;
+    border:#273273 2px solid;
 }
 
 footer {
