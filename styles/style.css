@@ -338,7 +338,7 @@ footer a:active {
     }
 
     nav {
-        height: 7vh;
+        height: 9vh;
     }
 
     .hero-content {
@@ -346,6 +346,16 @@ footer a:active {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.50rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav {
+        height: 10vh;
     }
 }
